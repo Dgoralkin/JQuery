@@ -1,7 +1,7 @@
 // JavaScript For index
 
 function afterText() {
-    var txt1 = "<b>I </b>";                     // Create element with HTML
+    var txt1 = "<br><b>I </b>";                     // Create element with HTML
     console.log(txt1);
 
     var txt2 = $("<i></i>").text("love ");      // Create with jQuery
