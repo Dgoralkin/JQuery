@@ -1,15 +1,55 @@
 // JavaScript For index
 
-
-function fnk1() {
-    console.log("HHHHHHHHHHH");
-}
-
-
 $(document).ready(function(){
 
     $("#B1").click(function(){
-        $("body").hide();
+        $("p").hide();
     });
-  
+    $("#B2").click(function(){
+        $("p").show();
+    });
+
+
+    $("#B3").click(function(){
+        $(".h2").hide();
+    });
+
+    $("#H3").on("mouseenter", function(){
+        $(this).css("background-color", "lightgray");
+    });
+    $("#H3").on("mouseleave", function(){
+        $(this).css("border", "2px solid red");
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   });
