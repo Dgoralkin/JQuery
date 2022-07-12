@@ -12,3 +12,17 @@ h1 {
     color: rgb(187, 46, 46);
     border: 2px solid black;
 }
+
+/* Style for .slideDown/.slideUp */
+#panel, #flipDown, #flipUp{
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+#panel {
+    padding: 50px;
+    background-color: rgb(0, 13, 255);
+    font-size: 80px;
+    display: none;
+}

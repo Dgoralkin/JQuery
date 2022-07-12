@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="Script.js" type="text/javascript"></script>
     <link href="Styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/w3jquery.gif">
     
     <title>JQuery</title>
 </head>
@@ -21,16 +22,74 @@
     <button id="B1">Click me to hide paragraphs</button>
     <button id="B2">Click me to show paragraphs</button>
     <p>This is P!</p>
-    <hr>
+    <hr><br>
 
 
     <h2 class="h2">This is a heading</h2>
     <button id="B3">Click me to show paragraphs</button>
-    <hr>
+    <hr><br>
 
 
     <p id="H3" class="border">Hoover me!</p>
     <hr>
+
+
+    <div>
+        <p id="P3">Hide(), Show(), $("p").toggle(1000, fnk())</p>
+    </div>
+
+    <p id="P4"></p>
+    <button id="B4">Hide/Show</button>
+    <hr><br>
+
+
+    <p>$(selector).fadeToggle(speed,callback);</p>
+    <button id="B5">Hide/Show</button><br>
+    <div>
+        <div id="box1" style="width:80px;height:80px;background-color:red;"></div>
+        <div id="box2" style="width:80px;height:80px;background-color:green;"></div>
+        <div id="box3" style="width:80px;height:80px;background-color:blue;"></div>
+    </div>
+    <hr><br>
+
+
+    <p>slideDown(), slideUp(), $(selector).slideToggle(speed,callback)</p>
+    <div id="flipDown">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>
+    <div id="flipUp">Click to slide up panel</div>
+    <hr><br>
+
+
+    <p>$("#P6").css("color", "red").slideUp(2000).slideDown(2000, function(){alert("The paragraph is now hidden");});</p>
+    <p id="P6">Chaining</p>
+    <button id="B6">Multi-Methods</button><br>
+    <hr><br>
+
+
+    <p><b>text(), html(), value(), attr()</b></p>
+    <p>$("name").attr("style");</p>
+
+    <p id="P7" style="color: red"><b>Some Text Example!</b></p>
+    <button id="B7">Show Text</button>
+    <button id="B8">Show Html</button>
+    <button id="B81">Show attribute</button>
+    <br><br>
+
+
+    <input type="text" id="INP1" value="" required>
+    <button id="B9">Show Value</button>
+    <br>
+    <hr><br>
+
+
+    <h3>Add Elements and Change text</h3>
+    <p>txt2 = $("i-/i").text("love ");</p>
+    <img src="/images/w3jquery.gif" alt="jQuery" width="100" height="140">
+    <p>Click the button to insert text after the image.</p>
+    <button onclick="afterText()">Insert after</button>
+    <hr><br>
+
+
 
 
 </body>
