@@ -6,6 +6,10 @@ function fnk1() {
 }
 
 
-$("#B1").click(function(){
-    $("body").hide();
-});
+$(document).ready(function(){
+
+    $("#B1").click(function(){
+        $("body").hide();
+    });
+  
+  });
