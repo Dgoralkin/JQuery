@@ -78,13 +78,9 @@ $(document).ready(function(){
     });
     $("#B9").click(function(){
         alert("Input Value is: " + $("#INP1").val());
-        console.log("Hi");
     });
 
 
-    $("#BBB").click(function(){
-        console.log("Hi");
-    });
 
 
 
