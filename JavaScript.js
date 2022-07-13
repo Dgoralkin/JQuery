@@ -78,18 +78,12 @@ $(document).ready(function(){
         alert("Input Value is: " + $("#INP1").val());
     });
 
-
-    $("#B10").click(function(){
-        $("#P10").load("TextFile.txt");
-    });
-
-
-
-
-
-
-
-
-
-
   });
+
+// ------------- JQUERY AJAX -------------
+
+$(document).ready(function(){
+$("#B10").click(function(){
+    $("#P10").load("TextFile.txt");
+});
+});

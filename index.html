@@ -54,6 +54,8 @@
     <hr><br>
 
 
+<!-- slideDown(), slideUp(), $(selector).slideToggle()   -->
+
     <p>slideDown(), slideUp(), $(selector).slideToggle(speed,callback)</p>
     <div id="flipDown">Click to slide down panel</div>
     <div id="panel">Hello world!</div>
@@ -66,6 +68,8 @@
     <button id="B6">Multi-Methods</button><br>
     <hr><br>
 
+
+<!-- text(), html(), value(), attr() -->
 
     <p><b>text(), html(), value(), attr()</b></p>
     <p>$("name").attr("style");</p>
@@ -83,6 +87,8 @@
     <hr><br>
 
 
+<!-- Add Elements and Change text -->
+
     <h3>Add Elements and Change text</h3>
     <p>txt2 = $("i-/i").text("love ");</p>
     <img src="w3jquery.gif" alt="jQuery" width="100" height="140">
@@ -91,10 +97,38 @@
     <hr><br>
 
 
-    <p class="border">jQuery - AJAX</p>
+    <p class="div">jQuery - AJAX</p>
     <button id="B10">Click To load from .txt file</button>
     <p id="P10"><b>Some Text Example!</b></p>
     <br><br>
+
+
+<!-- Filterable List -->
+
+    <p class="div">Filter Lists</p>
+
+    <p>Type something in the input field to search the list for specific items:</p>  
+    <input id="myInput" type="text" placeholder="Search..">
+    <br>
+    
+    <ul id="myList">
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+      <li>Fourth</li>
+    </ul>
+
+    <script>
+        $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+              var value = $(this).val().toLowerCase();
+              $("#myList li").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+            });
+          });
+    </script>
+
 
 
 </body>
