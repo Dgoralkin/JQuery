@@ -1,3 +1,4 @@
+
 // JavaScript For index
 
 function afterText() {
@@ -79,32 +80,6 @@ $(document).ready(function(){
     $("#B9").click(function(){
         alert("Input Value is: " + $("#INP1").val());
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
