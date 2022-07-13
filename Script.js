@@ -78,10 +78,12 @@ $(document).ready(function(){
     });
     $("#B9").click(function(){
         alert("Input Value is: " + $("#INP1").val());
+        console.log("Hi");
     });
 
-    $("#B11").click(function(){
-        alert("Input Value is: ");
+
+    $("#BBB").click(function(){
+        console.log("Hi");
     });
 
 
