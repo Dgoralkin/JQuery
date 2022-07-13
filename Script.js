@@ -80,6 +80,11 @@ $(document).ready(function(){
         alert("Input Value is: " + $("#INP1").val());
     });
 
+    $("#B11").click(function(){
+        alert("Input Value is: ");
+    });
+
+
 
 
 
